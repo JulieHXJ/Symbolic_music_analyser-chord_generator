@@ -1,0 +1,11 @@
+# rules.yaml
+
+chord_tone: 2.0
+strong_beat_chord_tone: 3.0
+non_chord_tone: -1.0
+diatonic_chord: 1.0
+
+transitions:
+  V-I: 3.0
+  ii-V: 2.5
+  IV-V: 2.0
