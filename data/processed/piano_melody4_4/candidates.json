@@ -1,0 +1,812 @@
+[
+    {
+        "root_pc": 0,
+        "root": "C",
+        "quality": "major",
+        "symbol": "C",
+        "pitch_classes": [
+            0,
+            4,
+            7
+        ],
+        "function": "I",
+        "source": "diatonic",
+        "degree": 1
+    },
+    {
+        "root_pc": 0,
+        "root": "C",
+        "quality": "maj7",
+        "symbol": "Cmaj7",
+        "pitch_classes": [
+            0,
+            4,
+            7,
+            11
+        ],
+        "function": "Imaj7",
+        "source": "diatonic",
+        "degree": 1
+    },
+    {
+        "root_pc": 2,
+        "root": "D",
+        "quality": "minor",
+        "symbol": "Dm",
+        "pitch_classes": [
+            2,
+            5,
+            9
+        ],
+        "function": "ii",
+        "source": "diatonic",
+        "degree": 2
+    },
+    {
+        "root_pc": 2,
+        "root": "D",
+        "quality": "min7",
+        "symbol": "Dm7",
+        "pitch_classes": [
+            2,
+            5,
+            9,
+            0
+        ],
+        "function": "ii7",
+        "source": "diatonic",
+        "degree": 2
+    },
+    {
+        "root_pc": 4,
+        "root": "E",
+        "quality": "minor",
+        "symbol": "Em",
+        "pitch_classes": [
+            4,
+            7,
+            11
+        ],
+        "function": "iii",
+        "source": "diatonic",
+        "degree": 3
+    },
+    {
+        "root_pc": 4,
+        "root": "E",
+        "quality": "min7",
+        "symbol": "Em7",
+        "pitch_classes": [
+            4,
+            7,
+            11,
+            2
+        ],
+        "function": "iii7",
+        "source": "diatonic",
+        "degree": 3
+    },
+    {
+        "root_pc": 5,
+        "root": "F",
+        "quality": "major",
+        "symbol": "F",
+        "pitch_classes": [
+            5,
+            9,
+            0
+        ],
+        "function": "IV",
+        "source": "diatonic",
+        "degree": 4
+    },
+    {
+        "root_pc": 5,
+        "root": "F",
+        "quality": "maj7",
+        "symbol": "Fmaj7",
+        "pitch_classes": [
+            5,
+            9,
+            0,
+            4
+        ],
+        "function": "IVmaj7",
+        "source": "diatonic",
+        "degree": 4
+    },
+    {
+        "root_pc": 7,
+        "root": "G",
+        "quality": "major",
+        "symbol": "G",
+        "pitch_classes": [
+            7,
+            11,
+            2
+        ],
+        "function": "V",
+        "source": "diatonic",
+        "degree": 5
+    },
+    {
+        "root_pc": 7,
+        "root": "G",
+        "quality": "dom7",
+        "symbol": "G7",
+        "pitch_classes": [
+            7,
+            11,
+            2,
+            5
+        ],
+        "function": "V7",
+        "source": "diatonic",
+        "degree": 5
+    },
+    {
+        "root_pc": 9,
+        "root": "A",
+        "quality": "minor",
+        "symbol": "Am",
+        "pitch_classes": [
+            9,
+            0,
+            4
+        ],
+        "function": "vi",
+        "source": "diatonic",
+        "degree": 6
+    },
+    {
+        "root_pc": 9,
+        "root": "A",
+        "quality": "min7",
+        "symbol": "Am7",
+        "pitch_classes": [
+            9,
+            0,
+            4,
+            7
+        ],
+        "function": "vi7",
+        "source": "diatonic",
+        "degree": 6
+    },
+    {
+        "root_pc": 11,
+        "root": "B",
+        "quality": "diminished",
+        "symbol": "Bdim",
+        "pitch_classes": [
+            11,
+            2,
+            5
+        ],
+        "function": "vii°",
+        "source": "diatonic",
+        "degree": 7
+    },
+    {
+        "root_pc": 11,
+        "root": "B",
+        "quality": "half_dim7",
+        "symbol": "Bm7b5",
+        "pitch_classes": [
+            11,
+            2,
+            5,
+            9
+        ],
+        "function": "viiø7",
+        "source": "diatonic",
+        "degree": 7
+    },
+    {
+        "root_pc": 0,
+        "root": "C",
+        "quality": "sus2",
+        "symbol": "Csus2",
+        "pitch_classes": [
+            0,
+            2,
+            7
+        ],
+        "function": null,
+        "source": "extension",
+        "degree": 1
+    },
+    {
+        "root_pc": 0,
+        "root": "C",
+        "quality": "sus4",
+        "symbol": "Csus4",
+        "pitch_classes": [
+            0,
+            5,
+            7
+        ],
+        "function": null,
+        "source": "extension",
+        "degree": 1
+    },
+    {
+        "root_pc": 0,
+        "root": "C",
+        "quality": "add9",
+        "symbol": "Cadd9",
+        "pitch_classes": [
+            0,
+            4,
+            7,
+            2
+        ],
+        "function": null,
+        "source": "extension",
+        "degree": 1
+    },
+    {
+        "root_pc": 0,
+        "root": "C",
+        "quality": "6",
+        "symbol": "C6",
+        "pitch_classes": [
+            0,
+            4,
+            7,
+            9
+        ],
+        "function": null,
+        "source": "extension",
+        "degree": 1
+    },
+    {
+        "root_pc": 0,
+        "root": "C",
+        "quality": "6_9",
+        "symbol": "C6/9",
+        "pitch_classes": [
+            0,
+            4,
+            7,
+            9,
+            2
+        ],
+        "function": null,
+        "source": "extension",
+        "degree": 1
+    },
+    {
+        "root_pc": 0,
+        "root": "C",
+        "quality": "maj9",
+        "symbol": "Cmaj9",
+        "pitch_classes": [
+            0,
+            4,
+            7,
+            11,
+            2
+        ],
+        "function": null,
+        "source": "extension",
+        "degree": 1
+    },
+    {
+        "root_pc": 2,
+        "root": "D",
+        "quality": "sus2",
+        "symbol": "Dsus2",
+        "pitch_classes": [
+            2,
+            4,
+            9
+        ],
+        "function": null,
+        "source": "extension",
+        "degree": 2
+    },
+    {
+        "root_pc": 2,
+        "root": "D",
+        "quality": "sus4",
+        "symbol": "Dsus4",
+        "pitch_classes": [
+            2,
+            7,
+            9
+        ],
+        "function": null,
+        "source": "extension",
+        "degree": 2
+    },
+    {
+        "root_pc": 2,
+        "root": "D",
+        "quality": "m6",
+        "symbol": "Dm6",
+        "pitch_classes": [
+            2,
+            5,
+            9,
+            11
+        ],
+        "function": null,
+        "source": "extension",
+        "degree": 2
+    },
+    {
+        "root_pc": 2,
+        "root": "D",
+        "quality": "min9",
+        "symbol": "Dm9",
+        "pitch_classes": [
+            2,
+            5,
+            9,
+            0,
+            4
+        ],
+        "function": null,
+        "source": "extension",
+        "degree": 2
+    },
+    {
+        "root_pc": 4,
+        "root": "E",
+        "quality": "sus2",
+        "symbol": "Esus2",
+        "pitch_classes": [
+            4,
+            6,
+            11
+        ],
+        "function": null,
+        "source": "extension",
+        "degree": 3
+    },
+    {
+        "root_pc": 4,
+        "root": "E",
+        "quality": "sus4",
+        "symbol": "Esus4",
+        "pitch_classes": [
+            4,
+            9,
+            11
+        ],
+        "function": null,
+        "source": "extension",
+        "degree": 3
+    },
+    {
+        "root_pc": 4,
+        "root": "E",
+        "quality": "m6",
+        "symbol": "Em6",
+        "pitch_classes": [
+            4,
+            7,
+            11,
+            1
+        ],
+        "function": null,
+        "source": "extension",
+        "degree": 3
+    },
+    {
+        "root_pc": 4,
+        "root": "E",
+        "quality": "min9",
+        "symbol": "Em9",
+        "pitch_classes": [
+            4,
+            7,
+            11,
+            2,
+            6
+        ],
+        "function": null,
+        "source": "extension",
+        "degree": 3
+    },
+    {
+        "root_pc": 5,
+        "root": "F",
+        "quality": "sus2",
+        "symbol": "Fsus2",
+        "pitch_classes": [
+            5,
+            7,
+            0
+        ],
+        "function": null,
+        "source": "extension",
+        "degree": 4
+    },
+    {
+        "root_pc": 5,
+        "root": "F",
+        "quality": "sus4",
+        "symbol": "Fsus4",
+        "pitch_classes": [
+            5,
+            10,
+            0
+        ],
+        "function": null,
+        "source": "extension",
+        "degree": 4
+    },
+    {
+        "root_pc": 5,
+        "root": "F",
+        "quality": "add9",
+        "symbol": "Fadd9",
+        "pitch_classes": [
+            5,
+            9,
+            0,
+            7
+        ],
+        "function": null,
+        "source": "extension",
+        "degree": 4
+    },
+    {
+        "root_pc": 5,
+        "root": "F",
+        "quality": "6",
+        "symbol": "F6",
+        "pitch_classes": [
+            5,
+            9,
+            0,
+            2
+        ],
+        "function": null,
+        "source": "extension",
+        "degree": 4
+    },
+    {
+        "root_pc": 5,
+        "root": "F",
+        "quality": "6_9",
+        "symbol": "F6/9",
+        "pitch_classes": [
+            5,
+            9,
+            0,
+            2,
+            7
+        ],
+        "function": null,
+        "source": "extension",
+        "degree": 4
+    },
+    {
+        "root_pc": 5,
+        "root": "F",
+        "quality": "maj9",
+        "symbol": "Fmaj9",
+        "pitch_classes": [
+            5,
+            9,
+            0,
+            4,
+            7
+        ],
+        "function": null,
+        "source": "extension",
+        "degree": 4
+    },
+    {
+        "root_pc": 7,
+        "root": "G",
+        "quality": "sus2",
+        "symbol": "Gsus2",
+        "pitch_classes": [
+            7,
+            9,
+            2
+        ],
+        "function": null,
+        "source": "extension",
+        "degree": 5
+    },
+    {
+        "root_pc": 7,
+        "root": "G",
+        "quality": "sus4",
+        "symbol": "Gsus4",
+        "pitch_classes": [
+            7,
+            0,
+            2
+        ],
+        "function": null,
+        "source": "extension",
+        "degree": 5
+    },
+    {
+        "root_pc": 7,
+        "root": "G",
+        "quality": "add9",
+        "symbol": "Gadd9",
+        "pitch_classes": [
+            7,
+            11,
+            2,
+            9
+        ],
+        "function": null,
+        "source": "extension",
+        "degree": 5
+    },
+    {
+        "root_pc": 7,
+        "root": "G",
+        "quality": "6",
+        "symbol": "G6",
+        "pitch_classes": [
+            7,
+            11,
+            2,
+            4
+        ],
+        "function": null,
+        "source": "extension",
+        "degree": 5
+    },
+    {
+        "root_pc": 7,
+        "root": "G",
+        "quality": "6_9",
+        "symbol": "G6/9",
+        "pitch_classes": [
+            7,
+            11,
+            2,
+            4,
+            9
+        ],
+        "function": null,
+        "source": "extension",
+        "degree": 5
+    },
+    {
+        "root_pc": 7,
+        "root": "G",
+        "quality": "dom9",
+        "symbol": "G9",
+        "pitch_classes": [
+            7,
+            11,
+            2,
+            5,
+            9
+        ],
+        "function": null,
+        "source": "extension",
+        "degree": 5
+    },
+    {
+        "root_pc": 9,
+        "root": "A",
+        "quality": "sus2",
+        "symbol": "Asus2",
+        "pitch_classes": [
+            9,
+            11,
+            4
+        ],
+        "function": null,
+        "source": "extension",
+        "degree": 6
+    },
+    {
+        "root_pc": 9,
+        "root": "A",
+        "quality": "sus4",
+        "symbol": "Asus4",
+        "pitch_classes": [
+            9,
+            2,
+            4
+        ],
+        "function": null,
+        "source": "extension",
+        "degree": 6
+    },
+    {
+        "root_pc": 9,
+        "root": "A",
+        "quality": "m6",
+        "symbol": "Am6",
+        "pitch_classes": [
+            9,
+            0,
+            4,
+            6
+        ],
+        "function": null,
+        "source": "extension",
+        "degree": 6
+    },
+    {
+        "root_pc": 9,
+        "root": "A",
+        "quality": "min9",
+        "symbol": "Am9",
+        "pitch_classes": [
+            9,
+            0,
+            4,
+            7,
+            11
+        ],
+        "function": null,
+        "source": "extension",
+        "degree": 6
+    },
+    {
+        "root_pc": 3,
+        "root": "D#",
+        "quality": "major",
+        "symbol": "D#",
+        "pitch_classes": [
+            3,
+            7,
+            10
+        ],
+        "function": "bIII",
+        "source": "borrowed",
+        "degree": null
+    },
+    {
+        "root_pc": 5,
+        "root": "F",
+        "quality": "minor",
+        "symbol": "Fm",
+        "pitch_classes": [
+            5,
+            8,
+            0
+        ],
+        "function": "iv",
+        "source": "borrowed",
+        "degree": null
+    },
+    {
+        "root_pc": 8,
+        "root": "G#",
+        "quality": "major",
+        "symbol": "G#",
+        "pitch_classes": [
+            8,
+            0,
+            3
+        ],
+        "function": "bVI",
+        "source": "borrowed",
+        "degree": null
+    },
+    {
+        "root_pc": 10,
+        "root": "A#",
+        "quality": "major",
+        "symbol": "A#",
+        "pitch_classes": [
+            10,
+            2,
+            5
+        ],
+        "function": "bVII",
+        "source": "borrowed",
+        "degree": null
+    },
+    {
+        "root_pc": 9,
+        "root": "A",
+        "quality": "dom7",
+        "symbol": "A7",
+        "pitch_classes": [
+            9,
+            1,
+            4,
+            7
+        ],
+        "function": "V/ii",
+        "source": "secondary_dominant",
+        "degree": null
+    },
+    {
+        "root_pc": 11,
+        "root": "B",
+        "quality": "dom7",
+        "symbol": "B7",
+        "pitch_classes": [
+            11,
+            3,
+            6,
+            9
+        ],
+        "function": "V/iii",
+        "source": "secondary_dominant",
+        "degree": null
+    },
+    {
+        "root_pc": 0,
+        "root": "C",
+        "quality": "dom7",
+        "symbol": "C7",
+        "pitch_classes": [
+            0,
+            4,
+            7,
+            10
+        ],
+        "function": "V/IV",
+        "source": "secondary_dominant",
+        "degree": null
+    },
+    {
+        "root_pc": 2,
+        "root": "D",
+        "quality": "dom7",
+        "symbol": "D7",
+        "pitch_classes": [
+            2,
+            6,
+            9,
+            0
+        ],
+        "function": "V/V",
+        "source": "secondary_dominant",
+        "degree": null
+    },
+    {
+        "root_pc": 4,
+        "root": "E",
+        "quality": "dom7",
+        "symbol": "E7",
+        "pitch_classes": [
+            4,
+            8,
+            11,
+            2
+        ],
+        "function": "V/vi",
+        "source": "secondary_dominant",
+        "degree": null
+    },
+    {
+        "root_pc": 0,
+        "root": "C",
+        "quality": "augmented",
+        "symbol": "Caug",
+        "pitch_classes": [
+            0,
+            4,
+            8
+        ],
+        "function": "Iaug",
+        "source": "chromatic",
+        "degree": null
+    },
+    {
+        "root_pc": 11,
+        "root": "B",
+        "quality": "dim7",
+        "symbol": "Bdim7",
+        "pitch_classes": [
+            11,
+            2,
+            5,
+            8
+        ],
+        "function": "vii°7",
+        "source": "chromatic",
+        "degree": null
+    }
+]

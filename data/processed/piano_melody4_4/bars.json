@@ -1,0 +1,405 @@
+[
+    {
+        "bar_number": 1,
+        "notes": [],
+        "pitch_histogram": {},
+        "pitch_histogram_names": {},
+        "strong_beat_notes": [],
+        "note_count": 0,
+        "note_density": 0.0,
+        "pitch_range": 0
+    },
+    {
+        "bar_number": 2,
+        "notes": [
+            {
+                "pitch": 52,
+                "pitch_class": 4,
+                "pitch_class_name": "E",
+                "duration": 0.99375,
+                "metric_position": 1.0,
+                "scale_degree": 3,
+                "strong_beat": true
+            },
+            {
+                "pitch": 53,
+                "pitch_class": 5,
+                "pitch_class_name": "F",
+                "duration": 1.1520833333333333,
+                "metric_position": 2.0,
+                "scale_degree": 4,
+                "strong_beat": false
+            },
+            {
+                "pitch": 55,
+                "pitch_class": 7,
+                "pitch_class_name": "G",
+                "duration": 1.55625,
+                "metric_position": 3.0,
+                "scale_degree": 5,
+                "strong_beat": true
+            }
+        ],
+        "pitch_histogram": {
+            "E": 0.99,
+            "F": 1.15,
+            "G": 1.56
+        },
+        "strong_beat_notes": [
+            {
+                "pitch": 52,
+                "pitch_class": 4,
+                "pitch_class_name": "E",
+                "duration": 0.99375,
+                "metric_position": 1.0,
+                "scale_degree": 3,
+                "strong_beat": true
+            },
+            {
+                "pitch": 55,
+                "pitch_class": 7,
+                "pitch_class_name": "G",
+                "duration": 1.55625,
+                "metric_position": 3.0,
+                "scale_degree": 5,
+                "strong_beat": true
+            }
+        ],
+        "note_count": 3,
+        "note_density": 0.75,
+        "pitch_range": 3
+    },
+    {
+        "bar_number": 3,
+        "notes": [
+            {
+                "pitch": 60,
+                "pitch_class": 0,
+                "pitch_class_name": "C",
+                "duration": 0.5708333333333333,
+                "metric_position": 1.0,
+                "scale_degree": 1,
+                "strong_beat": true
+            },
+            {
+                "pitch": 59,
+                "pitch_class": 11,
+                "pitch_class_name": "B",
+                "duration": 1.1020833333333333,
+                "metric_position": 1.5,
+                "scale_degree": 7,
+                "strong_beat": false
+            },
+            {
+                "pitch": 55,
+                "pitch_class": 7,
+                "pitch_class_name": "G",
+                "duration": 1.79375,
+                "metric_position": 2.5,
+                "scale_degree": 5,
+                "strong_beat": false
+            }
+        ],
+        "pitch_histogram": {
+            "C": 0.57,
+            "B": 1.1,
+            "G": 1.79
+        },
+        "strong_beat_notes": [
+            {
+                "pitch": 60,
+                "pitch_class": 0,
+                "pitch_class_name": "C",
+                "duration": 0.5708333333333333,
+                "metric_position": 1.0,
+                "scale_degree": 1,
+                "strong_beat": true
+            }
+        ],
+        "note_count": 3,
+        "note_density": 0.75,
+        "pitch_range": 5
+    },
+    {
+        "bar_number": 4,
+        "notes": [
+            {
+                "pitch": 52,
+                "pitch_class": 4,
+                "pitch_class_name": "E",
+                "duration": 1.1041666666666667,
+                "metric_position": 1.0,
+                "scale_degree": 3,
+                "strong_beat": true
+            },
+            {
+                "pitch": 53,
+                "pitch_class": 5,
+                "pitch_class_name": "F",
+                "duration": 1.04375,
+                "metric_position": 2.0,
+                "scale_degree": 4,
+                "strong_beat": false
+            },
+            {
+                "pitch": 55,
+                "pitch_class": 7,
+                "pitch_class_name": "G",
+                "duration": 1.55,
+                "metric_position": 3.0,
+                "scale_degree": 5,
+                "strong_beat": true
+            }
+        ],
+        "pitch_histogram": {
+            "E": 1.1,
+            "F": 1.04,
+            "G": 1.55
+        },
+        "strong_beat_notes": [
+            {
+                "pitch": 52,
+                "pitch_class": 4,
+                "pitch_class_name": "E",
+                "duration": 1.1041666666666667,
+                "metric_position": 1.0,
+                "scale_degree": 3,
+                "strong_beat": true
+            },
+            {
+                "pitch": 55,
+                "pitch_class": 7,
+                "pitch_class_name": "G",
+                "duration": 1.55,
+                "metric_position": 3.0,
+                "scale_degree": 5,
+                "strong_beat": true
+            }
+        ],
+        "note_count": 3,
+        "note_density": 0.75,
+        "pitch_range": 3
+    },
+    {
+        "bar_number": 5,
+        "notes": [
+            {
+                "pitch": 60,
+                "pitch_class": 0,
+                "pitch_class_name": "C",
+                "duration": 0.9958333333333333,
+                "metric_position": 1.0,
+                "scale_degree": 1,
+                "strong_beat": true
+            },
+            {
+                "pitch": 59,
+                "pitch_class": 11,
+                "pitch_class_name": "B",
+                "duration": 0.625,
+                "metric_position": 2.0,
+                "scale_degree": 7,
+                "strong_beat": false
+            },
+            {
+                "pitch": 62,
+                "pitch_class": 2,
+                "pitch_class_name": "D",
+                "duration": 1.625,
+                "metric_position": 2.5,
+                "scale_degree": 2,
+                "strong_beat": false
+            },
+            {
+                "pitch": 64,
+                "pitch_class": 4,
+                "pitch_class_name": "E",
+                "duration": 0.5979166666666667,
+                "metric_position": 4.0,
+                "scale_degree": 3,
+                "strong_beat": false
+            },
+            {
+                "pitch": 65,
+                "pitch_class": 5,
+                "pitch_class_name": "F",
+                "duration": 0.6,
+                "metric_position": 4.5,
+                "scale_degree": 4,
+                "strong_beat": false
+            }
+        ],
+        "pitch_histogram": {
+            "C": 1.0,
+            "B": 0.62,
+            "D": 1.62,
+            "E": 0.6,
+            "F": 0.6
+        },
+        "strong_beat_notes": [
+            {
+                "pitch": 60,
+                "pitch_class": 0,
+                "pitch_class_name": "C",
+                "duration": 0.9958333333333333,
+                "metric_position": 1.0,
+                "scale_degree": 1,
+                "strong_beat": true
+            }
+        ],
+        "note_count": 5,
+        "note_density": 1.25,
+        "pitch_range": 6
+    },
+    {
+        "bar_number": 6,
+        "notes": [
+            {
+                "pitch": 64,
+                "pitch_class": 4,
+                "pitch_class_name": "E",
+                "duration": 1.1479166666666667,
+                "metric_position": 1.0,
+                "scale_degree": 3,
+                "strong_beat": true
+            },
+            {
+                "pitch": 60,
+                "pitch_class": 0,
+                "pitch_class_name": "C",
+                "duration": 0.5270833333333333,
+                "metric_position": 2.0,
+                "scale_degree": 1,
+                "strong_beat": false
+            },
+            {
+                "pitch": 60,
+                "pitch_class": 0,
+                "pitch_class_name": "C",
+                "duration": 1.1541666666666666,
+                "metric_position": 3.0,
+                "scale_degree": 1,
+                "strong_beat": true
+            },
+            {
+                "pitch": 57,
+                "pitch_class": 9,
+                "pitch_class_name": "A",
+                "duration": 1.1291666666666667,
+                "metric_position": 4.0,
+                "scale_degree": 6,
+                "strong_beat": false
+            }
+        ],
+        "pitch_histogram": {
+            "E": 1.15,
+            "C": 1.68,
+            "A": 1.13
+        },
+        "strong_beat_notes": [
+            {
+                "pitch": 64,
+                "pitch_class": 4,
+                "pitch_class_name": "E",
+                "duration": 1.1479166666666667,
+                "metric_position": 1.0,
+                "scale_degree": 3,
+                "strong_beat": true
+            },
+            {
+                "pitch": 60,
+                "pitch_class": 0,
+                "pitch_class_name": "C",
+                "duration": 1.1541666666666666,
+                "metric_position": 3.0,
+                "scale_degree": 1,
+                "strong_beat": true
+            }
+        ],
+        "note_count": 4,
+        "note_density": 1.0,
+        "pitch_range": 7
+    },
+    {
+        "bar_number": 7,
+        "notes": [
+            {
+                "pitch": 55,
+                "pitch_class": 7,
+                "pitch_class_name": "G",
+                "duration": 1.2291666666666667,
+                "metric_position": 1.0,
+                "scale_degree": 5,
+                "strong_beat": true
+            },
+            {
+                "pitch": 60,
+                "pitch_class": 0,
+                "pitch_class_name": "C",
+                "duration": 1.975,
+                "metric_position": 2.0,
+                "scale_degree": 1,
+                "strong_beat": false
+            },
+            {
+                "pitch": 59,
+                "pitch_class": 11,
+                "pitch_class_name": "B",
+                "duration": 1.0729166666666667,
+                "metric_position": 4.0,
+                "scale_degree": 7,
+                "strong_beat": false
+            }
+        ],
+        "pitch_histogram": {
+            "G": 1.23,
+            "C": 1.98,
+            "B": 1.07
+        },
+        "strong_beat_notes": [
+            {
+                "pitch": 55,
+                "pitch_class": 7,
+                "pitch_class_name": "G",
+                "duration": 1.2291666666666667,
+                "metric_position": 1.0,
+                "scale_degree": 5,
+                "strong_beat": true
+            }
+        ],
+        "note_count": 3,
+        "note_density": 0.75,
+        "pitch_range": 5
+    },
+    {
+        "bar_number": 8,
+        "notes": [
+            {
+                "pitch": 60,
+                "pitch_class": 0,
+                "pitch_class_name": "C",
+                "duration": 2.185416666666667,
+                "metric_position": 1.0,
+                "scale_degree": 1,
+                "strong_beat": true
+            }
+        ],
+        "pitch_histogram": {
+            "C": 2.19
+        },
+        "strong_beat_notes": [
+            {
+                "pitch": 60,
+                "pitch_class": 0,
+                "pitch_class_name": "C",
+                "duration": 2.185416666666667,
+                "metric_position": 1.0,
+                "scale_degree": 1,
+                "strong_beat": true
+            }
+        ],
+        "note_count": 1,
+        "note_density": 0.25,
+        "pitch_range": 0
+    }
+]

@@ -4,17 +4,9 @@ from midi_parser import (
     create_bars,
     load_midi,
     extract_notes,
-    get_tempo,
-    get_time_signature,
     add_tick_info,
     assign_notes_to_bars,
     add_beat_positions,
-    # group_notes_by_onset,
-)
-
-from key_detector import (
-    detect_key,
-    tonic_name_to_pitch_class,
 )
 
 from feature_extractor import (
@@ -24,116 +16,112 @@ from feature_extractor import (
 from chord_candidates import (
     generate_candidates,
 )
+from analysis_pipeline import (
+    analyze_metadata,
+    # analyze_bars,
+    create_harmonic_windows,
+    ensure_output_dir,
+    save_metadata,
+    save_window_features,
+    save_candidates,
+    save_bar_features,
+)
+
 
 def main(file_path):
 
-    # 1. Load .mid
     midi = load_midi(file_path)
-    print("\n=== MIDI INFORMATION ===")
 
-    # 2. Tempo
-    tempo, tempo_source = get_tempo(midi)
-    print(f"Tempo: {tempo:.2f} BPM")
-    print(f"Tempo source: {tempo_source}")
+    # generate song-level metadata
+    metadata = analyze_metadata(
+        midi,
+        file_path,
+    )
 
-    # 3. Time signature
-    numerator, denominator = get_time_signature(midi)
-    print(f"Time signature: {numerator}/{denominator}")
-
-
-    # 4. Notes with tick information
+    # Notes with tick information
     notes = extract_notes(midi)
-    print(f"Number of notes: {len(notes)}")
-
     notes = add_tick_info(midi, notes)
+    metadata["note_count"] = len(notes)
 
-    # 5. Key
-    key_result = detect_key(file_path)
-    
-    tonic_pc = tonic_name_to_pitch_class(
-        key_result["tonic"]
-    )
-
-    mode = key_result["mode"]
-
-    candidates = generate_candidates(
-        tonic_pc,
-        mode,
-    )
-
-    print("\n=== CHORD CANDIDATES ===")
-
-    for chord in candidates:
-
-        print(
-            f"{chord['symbol']:8}"
-            f" | {str(chord['function']):8}"
-            f" | {chord['source']:20}"
-            f" | {chord['pitch_classes']}"
-        )
-
-    print("\n=== KEY ANALYSIS ===")
-    print(f"Estimated key: {key_result['key']}")
-    print(
-        f"Correlation: "
-        f"{key_result['correlation']:.3f}"
-    )
-
-    # 6. create bars
+    # bars with notes and beat positions
     bars = create_bars(midi)
+    bars = assign_notes_to_bars(notes, bars)
+    bars = add_beat_positions(midi, bars)
+    metadata["bar_count"] = len(bars)
 
-    # 7. assign notes
-    bars = assign_notes_to_bars(
-        notes,
-        bars,
+
+    # bar-level analysis data
+    bar_features = [
+        extract_bar_features(
+            bar,
+            metadata["tonic_pc"],
+            metadata["mode"],
+        )
+        for bar in bars
+    ]
+    windows = create_harmonic_windows(bar_features, beats_per_bar=metadata["numerator"], window_size=2.0)
+    metadata["window_count"] = len(windows)
+
+    # chord-level data
+    candidates = generate_candidates(
+        metadata["tonic_pc"],
+        metadata["mode"],
     )
 
-    # 8. add beat positions
-    bars = add_beat_positions(midi, bars)
+    scores = []
 
-    # extract all features for each bar
-    print("\n=== BAR ANALYSIS ===")
+    analysis = {
+        "metadata": metadata,
+        "bars": bar_features,
+        "windows": windows,
+        "candidates": candidates,
+        "scores": scores,
+    }
 
-    for bar in bars:
+    # output json and csv files
+    output_dir = ensure_output_dir(file_path)
+    save_metadata(metadata, output_dir)
+    save_window_features(windows, output_dir)
+    save_candidates(candidates, output_dir)
+    save_bar_features(bar_features, output_dir)
 
-        features = extract_bar_features(
-            bar,
-            tonic_pc,
-            mode,
-        )
 
-        print(f"\nBar {bar['bar_number']}")
+    print("\n=== ANALYSIS SUMMARY ===")
 
-        for note in features["notes"]:
-            print(
-                f"  {note['pitch_class_name']}"
-                f" | degree={note['scale_degree']}"
-                f" | beat={note['metric_position']}"
-                f" | duration={note['duration']:.2f}"
-                f" | strong={note['strong_beat']}"
-            )
+    print(
+        f"File: "
+        f"{metadata['file']}"
+    )
 
-        print(
-            "Pitch histogram:",
-            features["pitch_histogram"]
-        )
+    print(
+        f"Tempo: "
+        f"{metadata['tempo']:.2f} BPM"
+    )
 
-        print(
-            "Note count:",
-            features["note_count"]
-        )
+    print(
+        f"Time signature: "
+        f"{metadata['time_signature']}"
+    )
 
-        print(
-            "Note density:",
-            f"{features['note_density']:.2f}",
-            "notes/beat"
-        )
+    print(
+        f"Key: "
+        f"{metadata['key']}"
+    )
 
-        print(
-            "Pitch range:",
-            features["pitch_range"],
-            "semitones"
-        )
+    print(
+        f"Notes: "
+        f"{metadata['note_count']}"
+    )
+
+    print(
+        f"Bars: "
+        f"{metadata['bar_count']}"
+    )
+
+    print(
+        f"Harmonic windows: "
+        f"{metadata['window_count']}"
+    )
 
 
 if __name__ == "__main__":

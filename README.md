@@ -48,8 +48,10 @@ Accompaniment MIDI
 
 # 2. Execute
 
+Save your MIDI file in data/input/
+
 ```bash
-.venv/bin/python src/main.py data/input/piano4_4.mid
+.venv/bin/python src/main.py data/input/*.mid
 ```
 
 Current MVP assumptions:

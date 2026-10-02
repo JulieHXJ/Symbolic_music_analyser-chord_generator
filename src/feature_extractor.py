@@ -169,11 +169,8 @@ def extract_bar_features(bar, tonic_pitch_class, mode):
 
         pc = pitch_to_pitch_class(note["pitch"])
         quantized_beat = quantize_beat(note["beat"])
-
         degree = get_scale_degree(pc, tonic_pitch_class, mode)
-
         strong = is_strong_beat(note["beat"])
-
         feature = {
             "pitch": note["pitch"],
             "pitch_class": pc,
@@ -208,3 +205,92 @@ def extract_bar_features(bar, tonic_pitch_class, mode):
         "note_density": note_density,
         "pitch_range": calculate_pitch_range(notes),
     }
+
+
+
+def build_window_pitch_histogram(notes):
+    """
+    Duration-weighted pitch histogram
+    inside one harmonic window.
+
+    Uses window_duration instead of
+    the note's full duration.
+    """
+
+    histogram = {}
+
+    for note in notes:
+
+        name = note["pitch_class_name"]
+
+        duration = note[
+            "window_duration"
+        ]
+
+        if name not in histogram:
+            histogram[name] = 0.0
+
+        histogram[name] += duration
+
+    # cleaner output
+    return {
+        name: round(value, 2)
+        for name, value
+        in histogram.items()
+    }
+
+def calculate_window_note_count(
+    notes,
+    window_start,
+    window_end,
+):
+    """
+    Count note onsets inside the window.
+
+    Sustained notes entering from an
+    earlier window are not counted again.
+    """
+
+    return sum(
+        1
+        for note in notes
+        if (
+            window_start
+            <= note["metric_position"]
+            < window_end
+        )
+    )
+
+def calculate_window_note_density(
+    note_count,
+    window_start,
+    window_end,
+):
+    window_length = (
+        window_end
+        - window_start
+    )
+
+    if window_length <= 0:
+        return 0.0
+
+    return (
+        note_count
+        / window_length
+    )
+
+def calculate_window_pitch_range(
+    notes
+):
+    if not notes:
+        return 0
+
+    pitches = [
+        note["pitch"]
+        for note in notes
+    ]
+
+    return (
+        max(pitches)
+        - min(pitches)
+    )

@@ -1,0 +1,16 @@
+{
+    "file": "piano_melody4_4.mid",
+    "tempo": 120.0,
+    "tempo_source": "metadata",
+    "time_signature": "4/4",
+    "numerator": 4,
+    "denominator": 4,
+    "key": "C major",
+    "tonic": "C",
+    "tonic_pc": 0,
+    "mode": "major",
+    "key_correlation": 0.8694763196374331,
+    "note_count": 22,
+    "bar_count": 8,
+    "window_count": 16
+}
