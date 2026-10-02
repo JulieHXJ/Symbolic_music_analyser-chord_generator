@@ -1,29 +1,13 @@
 from collections import defaultdict
 
-PITCH_CLASS_NAMES = [
-    "C", "C#", "D", "D#", "E", "F",
-    "F#", "G", "G#", "A", "A#", "B"
-]
-
-# Semitone distances from tonic
-MAJOR_SCALE = [0, 2, 4, 5, 7, 9, 11]
-MINOR_SCALE = [0, 2, 3, 5, 7, 8, 10]
+from theory_definitions import (
+    pitch_to_pitch_class,
+    pitch_class_name,
+    MAJOR_SCALE,
+    NATURAL_MINOR_SCALE,
+)
 
 
-def pitch_to_pitch_class(pitch):
-    """
-    MIDI pitch -> pitch class. no octave. midi信号转音名
-
-    Example:
-        60 -> 0  (C)
-        64 -> 4  (E)
-        76 -> 4  (E)
-    """
-
-    return pitch % 12
-
-def pitch_class_name(pitch_class):
-    return PITCH_CLASS_NAMES[pitch_class]
 
 def get_scale_degree(
     pitch_class,
@@ -39,7 +23,7 @@ def get_scale_degree(
     if mode == "major":
         scale = MAJOR_SCALE
     elif mode == "minor":
-        scale = MINOR_SCALE
+        scale = NATURAL_MINOR_SCALE
     else:
         return None
 

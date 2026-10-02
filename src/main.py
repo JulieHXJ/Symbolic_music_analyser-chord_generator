@@ -21,6 +21,9 @@ from feature_extractor import (
     extract_bar_features,
 )
 
+from chord_candidates import (
+    generate_candidates,
+)
 
 def main(file_path):
 
@@ -52,6 +55,22 @@ def main(file_path):
     )
 
     mode = key_result["mode"]
+
+    candidates = generate_candidates(
+        tonic_pc,
+        mode,
+    )
+
+    print("\n=== CHORD CANDIDATES ===")
+
+    for chord in candidates:
+
+        print(
+            f"{chord['symbol']:8}"
+            f" | {str(chord['function']):8}"
+            f" | {chord['source']:20}"
+            f" | {chord['pitch_classes']}"
+        )
 
     print("\n=== KEY ANALYSIS ===")
     print(f"Estimated key: {key_result['key']}")
